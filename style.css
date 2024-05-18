@@ -1,21 +1,109 @@
-.arena{
+body {
+    font-family: Arial, "Comic Sans MS", cursive;
+    background-color: #535151;
+    color: #333;
+}
+
+footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #c72f2f;
+    color: #000000; 
+}
+
+.footer-content {
     display: flex;
-    height: 300px;
+    justify-content: space-between;
+}
+
+footer ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+header {
+    background-color: #c72f2f;
+    color: #e7b322;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, "Comic Sans MS", cursive;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    flex-grow: 1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(118, 179, 116);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    margin-bottom: 0px;
+}
+
+.arena{
+    position: relative;
+    display: flex;
+    height: 600px;
     background-image: url('./fondo.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 #poke{
-    height:150px;
-    position: fixed;
-    top:240px;
-    left:100px;
+    position: absolute;
+    height:200px;
+    top:180px;
+    left:160px;
 }
 
 #poke2{
-    height:150px;
-    position:fixed;
-    top:150px;
-    left:300px;
+    position: absolute;
+    height:200px;
+    top:47px;
+    left:450px;
+}
+
+.espacio {
+    margin-right: 5px;
+}
+
+#mensajes-combate {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .arena {
+        height: 200px;
+    }
+
+    #poke {
+        position: absolute;
+        height: 100px;
+        top: 120px;
+        left: 50px;
+    }
+
+    #poke2 {
+        position: absolute;
+        height: 100px;
+        top: 80px;
+        left: 150px;
+    }
 }

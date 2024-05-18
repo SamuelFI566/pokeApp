@@ -8,45 +8,49 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
+
+    <header>
+        <h1>PokeApp</h1>
+    </header>
     
-    <div class="stats" id="poke-rival">
-        <h3 id="nombrePoke-rival"></h3>
-        <p id="tipoRival"></p>
-        <p>Ataque: <span id="ataqueRival"></span></p>
-    </div>
+    <main>
+        <section class="stats" id="poke-rival">
+            <h3 id="nombrePoke-rival"></h3>
+            <p> <span id="tipoRival"></span> <span class="espacio"></span> <span id="tipoRivalSecundario"></span></p>
+            <p>Ataque: <span id="ataqueRival"></span></p>
+        </section>
 
+        <section class="arena">
+            <img id="poke2" src="" alt="">
+            <img id="poke" src="" alt="">
+        </section>
 
-    <div class="arena">
-        <img id="poke2" src="" alt="">
-        <img id="poke" src="" alt="">
-    </div>
+        <section class="stats" id="poke-propio">
+            <h3 id="nombrePoke-propio"></h3>
+            <p> <span id="tipoPropio"></span> <span class="espacio"></span> <span id="tipoPropioSecundario"></span></p>
+            <p>Ataque: <span id="ataquePropio"></span></p>
+        </section>
 
-    <div class="stats" id="poke-propio">
-        <h3 id="nombrePoke-propio"></h3>
-        <p id="tipoPropio"></p>
-        <p>Ataque: <span id="ataquePropio"></span></p>
-    </div>
+        <section class="controls" id="controls">
+            <input id="input" max="999" type="number" placeholder="Ingresa un número">
+            <button id="btn-poke">Elegir Pokémon</button>
+            <button id="combate">Ataque</button>
+        </section>
 
-    <div>
-        <input id = "input" max="999" type="number">
-        <button id="btn-poke">Elegir poke</button>
-        <button id="combate">Ataque</button>
-    </div>
+        <section id="mensajes-combate"></section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ol>
+                <li>Torres Delgadillo Samuel Mixcoatl</li>
+                <li>Valdez Hernandez Alan Josue</li>
+                <li>Jimenez Elizalde Josue</li>
+                <li>Tavera Castillo David Emmanuel</li>
+            </ol>
+        </div>
+    </footer>
     <script src="./app.js"></script>
-
-    <ol>
-        <li>
-            Torres Delgadillo Samuel Mixcoatl
-        </li>
-        <li>
-            Valdez Hernandez Alan Josue
-        </li>
-        <li>
-            Jimenez Elizalde Josue
-        </li>
-        <li>
-            Tavera Castillo David Emmanuel
-        </li>
-    </ol>
 </body>
 </html>
